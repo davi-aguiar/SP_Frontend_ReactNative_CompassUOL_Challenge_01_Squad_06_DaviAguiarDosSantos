@@ -21,16 +21,17 @@ body {
   border-bottom: 1px solid #ccc;
 }
 
-.header a{
+.header a {
   text-decoration: none;
   color: #000;
   transition: color 0.3s ease;
 }
 
-.header a:hover{
+.header a:hover {
   color: #f3b415;
 }
-/*
+
+/* possível botão a ser adicionado( olhar no final do projeto)
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -63,7 +64,7 @@ body {
   justify-content: space-between;
 }
 
-.navbar{
+.navbar {
   max-width: 100%;
   overflow-x: auto;
 }
@@ -71,9 +72,7 @@ body {
 .nav-item {
   margin: 5px 10px;
 }
-*/
-
-.home {
+*/ .home {
   background-color: #f0f0f0;
   padding: 20px;
 }
@@ -102,35 +101,101 @@ body {
   }
 }
 
-.home{
-  text-align: center;  
+.home {
+  text-align: center;
 }
 
-.home h2{
+.home h2 {
   padding-top: 10px;
-text-align: center;
-font-family: New York;
-font-size: 54px;
-font-style: normal;
-font-weight: 700;
-line-height: 100%; /* 54px */
+  text-align: center;
+  font-family: New York;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 54px */
 }
 
 .home h3 {
- 
-padding-top: 10px;
-text-align: center;
-font-family: SF Mono;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 170%; /* 34px */
-margin-top: 20px;
-
+  padding-top: 10px;
+  text-align: center;
+  font-family: SF Mono;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 34px */
+  margin-top: 20px;
 }
 
-@media(max-width: 768px){
+.custom-hr {
+  border: none;
+  height: 2px;
+  background-color: #555;
+  margin: 10px 0;
+  width: 50%;
+  margin: 10px auto;
+}
+
+@media (max-width: 768px) {
   .home h3 {
     font-size: 1.2rem;
   }
 }
+
+.articles {
+  padding-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/* olhar a fonte */
+.title-article {
+  font-family: Arial, sans-serif;
+  font-size: 44px;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  height: 100vh;
+  font-family: New York Extra Large;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.grid-post {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+  width: 800px;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.img-post {
+  max-width: 100%;
+  height: auto;
+  
+}
+
+.post a {
+  text-decoration: none;
+  color: #333;
+}
+
+
+
+
+
+
+
