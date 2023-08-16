@@ -12,6 +12,7 @@ body {
 }
 
 .header {
+  /* position: fixed; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -67,20 +68,31 @@ body {
 .navbar {
   max-width: 100%;
   overflow-x: auto;
+ 
 }
 
 .nav-item {
+  padding-bottom: 1rem;
   margin: 5px 10px;
+  transition: transform .2s;
+  border-bottom:1px solid #ffffff;
 }
+
+.nav-item:hover{
+  
+  border-bottom: 1px solid #f3b415;
+}
+
 */ .home {
   background-color: #f0f0f0;
   padding: 20px;
 }
-
+/* PARA LEMBRAR AQUI É O BANNER */
 .home-content {
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .home-content img {
@@ -142,37 +154,38 @@ body {
 }
 
 .articles {
-  padding-top: 70px;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+   /* height: 90vh;  */
   flex-direction: column;
+  animation: slideInFromBottom 1s ease-in-out;
 }
 
 /* olhar a fonte */
 .title-article {
-  font-family: Arial, sans-serif;
+  font-family: 'Times New Roman', Times, serif
   font-size: 44px;
-  display: flex;
-  justify-content: center;
-  margin-top: 60px;
-  height: 100vh;
-  font-family: New York Extra Large;
-  font-style: normal;
+  text-align: center;
+  margin: 30px auto; /* Ajuste a margem superior para diminuir o espaçamento */
   font-weight: 700;
   line-height: normal;
+  
 }
 
 .grid-post {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 1.25rem;
+  row-gap: 2rem;
+  column-gap: 4rem;
   justify-items: center;
   align-items: center;
   text-align: center;
-  margin: 20px;
+  margin: 0 auto;
   width: 800px;
+  animation: slideInFromBottom s ease-in-out;
 }
 
 .post {
@@ -182,17 +195,44 @@ body {
   text-align: center;
 }
 
-.img-post {
-  max-width: 100%;
-  height: auto;
-  
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
+.img-post {
+  width: 100%;
+  height: auto;
+  max-width: 384px;
+  animation: slideInFromBottom 1s ease-in-out;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  transition: transform .2s;
+  }
+
+  .img-post:hover {
+    transform: scale(1.05);
+  }
+
 .post a {
+  margin-top: 10px;
   text-decoration: none;
   color: #333;
 }
 
+.footer{
+  margin-top: 60px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 40px;
+  flex-shrink: 0;
+
+}
 
 
 
