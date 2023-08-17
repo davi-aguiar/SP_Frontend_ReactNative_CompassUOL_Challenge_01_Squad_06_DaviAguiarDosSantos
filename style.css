@@ -20,6 +20,27 @@ body {
   text-decoration: none;
   padding: 10px 2vw;
   border-bottom: 1px solid #ccc;
+
+}
+
+body.dark-mode {
+  background-color: #060606;
+  color: #ffffff;
+}
+
+body.dark-mode header {
+  background-color: #1a1a1a;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  transition: transform 0.3s ease;
+}
+
+.dark-mode .icon {
+  transform: rotate(180deg);
 }
 
 .header a {
@@ -158,20 +179,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-   /* height: 90vh;  */
   flex-direction: column;
   animation: slideInFromBottom 1s ease-in-out;
 }
 
 /* olhar a fonte */
 .title-article {
-  font-family: 'Times New Roman', Times, serif
+  font-family: 'Times New Roman', Times, serif;
   font-size: 44px;
   text-align: center;
   margin: 30px auto; /* Ajuste a margem superior para diminuir o espaçamento */
   font-weight: 700;
   line-height: normal;
-  
 }
 
 .grid-post {
@@ -181,11 +200,21 @@ body {
   row-gap: 2rem;
   column-gap: 4rem;
   justify-items: center;
-  align-items: center;
+  /* align-items: center; */
   text-align: center;
   margin: 0 auto;
-  width: 800px;
+  width: 50rem;
   animation: slideInFromBottom s ease-in-out;
+}
+
+
+@media (max-width: 768px) {
+  .grid-post {
+    grid-template-columns: 1fr; /* Uma coluna para tamanhos de tela menores */
+    row-gap: 1rem; /* Espaçamento menor entre as linhas */
+    column-gap: 0; /* Nenhum espaçamento entre as colunas */
+    width: 20rem; /* Largura total da tela */
+  }
 }
 
 .post {
@@ -205,12 +234,13 @@ body {
 }
 
 .img-post {
-  width: 100%;
+  display:flex;
+  width: auto;
   height: auto;
   max-width: 384px;
   animation: slideInFromBottom 1s ease-in-out;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 10px;
+  margin-bottom: 0,625px;
   transition: transform .2s;
   }
 
@@ -249,7 +279,15 @@ a{
   justify-content: space-between;
   color: #ffffff;
   margin-top: 0.625rem;
+
 }
+
+/* borda azul nos links dos post (testando implementação de acessibilidade
+ */
+a:focus {
+  outline: 2px solid blue;
+}
+
  
   .nav-foot{
     text-decoration: none;
