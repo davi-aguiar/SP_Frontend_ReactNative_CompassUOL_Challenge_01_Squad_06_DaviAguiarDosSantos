@@ -309,7 +309,7 @@ body.dark-mode header {
   animation: slideInFromBottom 1s ease-in-out;
 }
 
-/* olhar a fonte */
+
 .title-article {
   font-family: "Times New Roman", Times, serif;
   font-size: 44px;
@@ -336,9 +336,9 @@ body.dark-mode header {
 @media (max-width: 768px) {
   .grid-post {
     grid-template-columns: 1fr; /* Uma coluna para tamanhos de tela menores */
-    row-gap: 1rem; 
-    column-gap: 0; 
-    width: 100%; 
+    row-gap: 1rem;
+    column-gap: 0;
+    width: 100%;
   }
 }
 
@@ -390,9 +390,9 @@ body.dark-mode header {
 
 .nav-foot {
   display: flex;
-  text-decoration: none;
+  color: #ffffff;
   font-family: "SF Pro Text", sans-serif;
-  list-style: none;
+
   display: flex;
   justify-content: space-between;
   padding: 0;
@@ -454,7 +454,6 @@ body.dark-mode header {
 }
 
 .comment {
-
   border: 1px solid #cccccc;
   padding: 10px;
   margin: 20px 0;
@@ -467,4 +466,28 @@ body.dark-mode header {
 
 .comment-body {
   margin-top: 5px;
+}
+
+body.dark-mode {
+  background-color: #060606;
+  color: #ffffff;
+}
+
+body.dark-mode header {
+  background-color: #1a1a1a;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  transition: transform 0.3s ease;
+}
+
+.dark-mode .icon {
+  transform: rotate(180deg);
+}
+
+.a {
+  text-decoration: none;
 }
