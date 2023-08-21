@@ -210,10 +210,10 @@ body.dark-mode header {
 
 @media (max-width: 768px) {
   .grid-post {
-    grid-template-columns: 1fr; /* Uma coluna para tamanhos de tela menores */
-    row-gap: 1rem; /* Espaçamento menor entre as linhas */
-    column-gap: 0; /* Nenhum espaçamento entre as colunas */
-    width: 20rem; /* Largura total da tela */
+    grid-template-columns: 1fr; 
+    row-gap: 1rem; 
+    column-gap: 0; 
+    width: 20rem; 
   }
 }
 

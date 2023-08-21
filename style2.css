@@ -280,8 +280,7 @@ body.dark-mode header {
   justify-content: center;
   align-items: center;
 }
-/* Arrumar daqui pra baixo
- */
+
 .profile-content-b {
   width: 100%;
   max-width: 640px;
@@ -337,9 +336,9 @@ body.dark-mode header {
 @media (max-width: 768px) {
   .grid-post {
     grid-template-columns: 1fr; /* Uma coluna para tamanhos de tela menores */
-    row-gap: 1rem; /* Espaçamento menor entre as linhas */
-    column-gap: 0; /* Nenhum espaçamento entre as colunas */
-    width: 100%; /* Largura total da tela */
+    row-gap: 1rem; 
+    column-gap: 0; 
+    width: 100%; 
   }
 }
 
@@ -445,19 +444,21 @@ body.dark-mode header {
 }
 
 .comments-section {
-  margin-top: auto;
+  margin-top: 100px;
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border: 1px solid black;
 }
 
 .comment {
-  border: 1px solid #ccc;
+
+  border: 1px solid #cccccc;
   padding: 10px;
-  margin: 10px 0;
+  margin: 20px 0;
+  justify-content: space-between;
 }
 
 .comment-author {
