@@ -116,11 +116,9 @@
         </section>
         <section class="text-content" > 
           <div class="text-profile"> 
-            
-  
-              <h1 class="next">Next on the pipeline</h1>
-
-              <p class="text-profile-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu velit
+          
+              <h1 id="next" class="next">Next on the pipeline</h1>
+              <p id="text-profile" class="text-profile-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu velit
                 tempus erat egestas efficitur. In hac habitasse platea dictumst. Fusce
                 a nunc eget ligula suscipit finibus. Aenean pharetra quis lacus at
                 viverra.</p>
@@ -130,7 +128,7 @@
                 posuere maximus dui et fringilla. Nulla non volutpat leo.</p> -->
 
               <div class="image-rectangle">
-              <img src="images/Rectangle 8.png" alt="Rectangle">
+              <img id="imgAPI" class="imgAPI" src="images/Rectangle 8.png" alt="Rectangle">
             </div>
 
             <div class="sharebutton">
@@ -147,17 +145,15 @@
               
               </div>
             </div>
-            <p> conteudo</p>
-            <section class="profile-content-b">
-              <section class="post-content">
-                <div class="profile">
-                  <img src="images/WhatsApp Image 2023-08-17 at 13.23.56.jpeg">
-                </div>
-      
-                <div>
-                  <p id="mika-info"><strong>Mika Matikainen</strong> is a Design Founder & Advisor,Berlin School of Creative Leadership Executive MBA participant,Zippie Advisor Wolt co-funder,and Nordic Rose Stakeholder</p>
-                </div>  
-              </div>
+           
+            <section class="post-content">
+              <section>
+                <img id="profile-img" src="images/WhatsApp Image 2023-08-17 at 13.23.56.jpeg" alt="Foto de Perfil do Usuário Autor do Post."/>
+              </section>
+              <section id="info">
+                <p id="profile-name">Mika Matikainen</p>
+                <p id="post-details">is a Design Founder & Advisor, Berlin School of Creative Leadership Executive MBA participant, Zippie advisor, Wolt co-founder, and Nordic Rose stakeholder.</p>
+              </section>
         </section>
     </section>
     
@@ -198,11 +194,18 @@
         <img class="img-post" src="images/Rectangle 39.png" />
         <a href="#" class="legend">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</a>
       </div>
-     
-
+    
     </div>
   </section>
- 
+
+<section class="comments-section">
+    <div class="comment">
+        <div class="comment-author">User123</div>
+        <div class="comment-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod tincidunt ligula, non placerat libero condimentum id.
+        </div>
+    </div>
+</section>
 
   </section>
   <footer>
@@ -284,7 +287,7 @@
     
   </footer>
 </body>
-
+<script type="module" src="index.js"></script>
 
 
 </html>
